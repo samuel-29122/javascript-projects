@@ -10,8 +10,8 @@ My freeCodeCamp JavaScript certification projects.
 
 ## JavaScript-only projects (code in the folder, no web page)
 
-- Voting System: [voting-system/script.js](voting-system/script.js)
-- Bank Account Management Program: [bank-account-management-program/script.js](bank-account-management-program/script.js)
+- Voting System: [voting-system/script.js](voting-system/script.js). Lets people vote for options and shows the results.
+- Bank Account Management Program: [bank-account-management-program/script.js](bank-account-management-program/script.js). A BankAccount class with methods for deposits, withdrawals and balance.
 
 To run these, install Node.js, then run `node script.js` inside the project folder.
 
