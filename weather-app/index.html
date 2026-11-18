@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Weather Checker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="weather-app">
+    <header>
+      <h1>City Weather Checker</h1>
+      <p>See what the weather is like around the world.</p>
+    </header>
+
+    <div class="search-area">
+      <label for="city-select">Choose a city</label>
+
+      <select id="city-select">
+        <option value=""></option>
+        <option value="new york">New York</option>
+        <option value="los angeles">Los Angeles</option>
+        <option value="chicago">Chicago</option>
+        <option value="paris">Paris</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="london">London</option>
+      </select>
+
+      <button id="get-weather-btn" type="button">
+        Get Weather
+      </button>
+    </div>
+
+    <section class="weather-card">
+      <h2 id="location">Choose a city to begin</h2>
+
+      <img
+        id="weather-icon"
+        alt="Weather icon"
+        hidden
+      >
+
+      <p id="weather-main">Weather conditions</p>
+
+      <div class="temperature">
+        <span id="main-temperature">--</span>
+      </div>
+
+      <div class="weather-details">
+        <div class="detail">
+          <span>Feels Like</span>
+          <strong id="feels-like">--</strong>
+        </div>
+
+        <div class="detail">
+          <span>Humidity</span>
+          <strong id="humidity">--</strong>
+        </div>
+
+        <div class="detail">
+          <span>Wind Speed</span>
+          <strong id="wind">--</strong>
+        </div>
+
+        <div class="detail">
+          <span>Wind Gust</span>
+          <strong id="wind-gust">--</strong>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Weather data provided through the freeCodeCamp API.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
