@@ -1,14 +1,19 @@
 # JavaScript Projects
 
-My freeCodeCamp JavaScript certification projects, built with HTML, CSS and JavaScript.
+My freeCodeCamp JavaScript certification projects.
 
-## Projects
+## Projects with a live demo
 
 - Markdown to HTML Converter: https://samuel-29122.github.io/javascript-projects/markdown-to-html-converter/
 - Drum Machine: https://samuel-29122.github.io/javascript-projects/drum-machine/
-- Voting System: https://samuel-29122.github.io/javascript-projects/voting-system/
 - Weather App: https://samuel-29122.github.io/javascript-projects/weather-app/
-- Bank Account Management Program: code in the `bank-account-management-program` folder
+
+## JavaScript-only projects (code in the folder, no web page)
+
+- Voting System: [voting-system/script.js](voting-system/script.js)
+- Bank Account Management Program: [bank-account-management-program/script.js](bank-account-management-program/script.js)
+
+To run these, install Node.js, then run `node script.js` inside the project folder.
 
 ## Skills used
 
