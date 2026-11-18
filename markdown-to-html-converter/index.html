@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown to HTML Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="app">
+    <header class="app-header">
+      <span class="eyebrow">WEB DEVELOPMENT TOOL</span>
+      <h1>Markdown to HTML Converter</h1>
+      <p>
+        Write Markdown and instantly convert it into HTML.
+        See your code and live preview side by side.
+      </p>
+    </header>
+
+    <section id="container">
+
+      <div class="editor-panel">
+        <div class="panel-header">
+          <h2>Markdown Input</h2>
+          <span class="panel-label">EDITOR</span>
+        </div>
+
+        <textarea
+          id="markdown-input"
+          aria-label="Markdown input"
+          placeholder="Start typing your Markdown here..."
+          spellcheck="false"
+        ></textarea>
+      </div>
+
+      <div class="output-panel">
+        <div class="panel-header">
+          <h2>Raw HTML Output</h2>
+          <span class="panel-label">HTML</span>
+        </div>
+
+        <div
+          id="html-output"
+          aria-label="Generated HTML"
+        ></div>
+      </div>
+
+      <div class="preview-panel">
+        <div class="panel-header">
+          <h2>HTML Preview</h2>
+          <span class="panel-label">LIVE</span>
+        </div>
+
+        <div
+          id="preview"
+          aria-label="HTML preview"
+        ></div>
+      </div>
+
+    </section>
+
+    <footer class="app-footer">
+      <p>Built with HTML, CSS and JavaScript</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
