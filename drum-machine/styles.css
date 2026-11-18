@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #10121d;
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 20px;
+}
+
+#drum-machine {
+  width: 100%;
+  max-width: 440px;
+  padding: 35px 25px;
+  background: #1d2030;
+  border: 1px solid #34384d;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  margin: 0;
+  font-size: 38px;
+  letter-spacing: 2px;
+  color: #b69aff;
+}
+
+.subtitle {
+  margin: 10px 0 30px;
+  color: #a8acc0;
+}
+
+#pad-bank {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.drum-pad {
+  height: 95px;
+  border: 2px solid #454966;
+  border-radius: 12px;
+  background: #30344b;
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.12s, transform 0.12s;
+}
+
+.drum-pad:hover {
+  background: #57517e;
+}
+
+.drum-pad:active,
+.drum-pad.active {
+  background: #9b7bff;
+  transform: scale(0.95);
+}
+
+.drum-pad:focus-visible {
+  outline: 3px solid #e5d9ff;
+  outline-offset: 3px;
+}
+
+.sound-label {
+  margin: 30px 0 8px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #9296ad;
+}
+
+#display {
+  margin: 0;
+  padding: 18px;
+  background: #111320;
+  border-radius: 10px;
+  color: #c5b1ff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hint {
+  margin: 25px 0 0;
+  font-size: 13px;
+  color: #9296ad;
+}
+
+@media (max-width: 400px) {
+  #drum-machine {
+    padding: 25px 15px;
+  }
+
+  .drum-pad {
+    height: 75px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
